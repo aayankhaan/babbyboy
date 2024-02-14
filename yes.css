@@ -1,0 +1,41 @@
+* {
+    font-family: "Single Day", cursive;
+}
+
+html {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #ffd9cc;
+}
+
+.container {
+	height: 100%;
+}
+
+.header_text {
+	color: #945140;
+    font-weight: bold;
+  
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+
+.gif_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+

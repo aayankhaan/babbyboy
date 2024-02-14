@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="image-removebg-preview.png">
+</head>
+<body>
+<div class="container">
+        <div>
+            <h1 class="header_text">Will you be my valentine?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="peach-and-goma-peach-goma.gif">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="yes()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+        </div>
+    </div>
+    <form method="post">
+        <input type="submit" value="logout" name="logout">
+    </form>
+    <script>
+        function yes() {
+            window.location.href = "yes.html";
+        }
+
+        function moveButton() {
+           var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+           var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+           document.getElementById('noButton').style.left = `${x}px`;
+           document.getElementById('noButton').style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
